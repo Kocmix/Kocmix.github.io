@@ -3,145 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pamyatka</title>
-    <style>
-body{
-    background:linear-gradient(rgb(255, 255, 255))fixed;
-    color: red;
-}            
-.abc{
-    width: 100%;
-}
-.header{
-  display: flex;
-  border: 1px solid black;
-  background-color: black;
-  height: 50px;
-}
-.header__menu{
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-.header__logo{
-  height: 90%;
-}
-.header__logo img{
-  height: 100%;
-}
-
-    </style>
+    <title>Document</title>
 </head>
-
+<style>
+body{
+    font-size: 50px;
+    background-color: red;
+}
+</style>
 <body>
- <div class="header">
-  <div class="header__logo"><img src="google_logo.jpg" alt=""></div>
-  <div class="header__menu">
-    <div>one</div>
-    <div>two</div>
-    <div>three</div>
-  </div>
+<script>
+ let a;
+ a = Number(prompt("сколько вам лет?"));
 
- </div>  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <h1>
-    <ul>
-        <li> H
-        <ul>
-            <li>Здравствуйте</li>
-            <li>Привіт</li>
-            <li>cәлеметсіз бе</li> 
-            <li>你好</li>
-            <li>こんにちは</li>
-        </ul>
-        </li>
-    </ul>
-     
-    <img class="abc" src="qEbVTDWBaNM.jpg" alt="">
-   <table>
-    <thead>
-      <tr>
-        <th>Английский</th>
-        <th>Русский</th>
-        <th>Японский</th>
-      </tr>
-    </thead>
-    <tbody>
-       <tr>
-        <td>Hello</td>
-        <td>Здравствуйте</td>
-        <td>こんにちは</td>
-       </tr>
-    </tbody>
-</table>
-<pre>
-<b>Вы ушли,</b>
-        как говорится,
-                    в мир в иной.
-<em>Пустота...</em>
-        Летите,
-                в звезды врезываясь.
-Ни тебе аванса,
-                ни пивной.
-<strong>Трезвость.</strong>
-</pre>
-<video width="320" height="240" controls src="https://www.w3schools.com/html/movie.mp4"> 
-</video>
-<span>Span является строчным элементом.</span>
-<span>Span является строчным элементом.</span>
-<link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/png" sizes="64x64">
-<form action="/people">
-    <label>
-      <input type="checkbox" name="languages" value="HTML">
-      Хочу изучать HTML
-    </label>
-    <label>
-      <input type="checkbox" name="languages" value="CSS">
-      Хочу изучать CSS
-    </label> 
-</form>
-<form action="/people">
-    <label>
-    <input type="radio" name="delivery" value="yes">
-    38
-  </label>
-    <br>
-    <label>
-    <input type="radio" name="delivery" value="no">
-    65
-  </label>
-  <form action="/people">
-    <select multiple>
-      <option>JS</option>
-      <option>PHP</option>
-      <option>Java</option>
-    </select>
-  </form>
-</form>
+ if(a >= 21){
+    document.body.style.backgroundColor = "white";
+    document.write("Ты взрослый");
+    document.write('<img src="галочка.png">');
+} else if( a >=18){
+    document.body.style.backgroundColor = "blue";
+    document.write("Ты совершеннолетний");
+    document.write('<img src="галочка.png">');
+} else if(a >=16) {
+    document.write("Ты ребенок");
+    document.write('<img src="крест.png">');
+} else if(a =>16) {
+    document.write("Ты ребенок");
+    document.write('<img src="крест.png">');
+}
+</script>    
 </body>
 </html>
