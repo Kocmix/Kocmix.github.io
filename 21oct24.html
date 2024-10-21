@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+       body{
+        display: flex;
+       } 
+    </style>
 </head>
 <body>
-    <script>
-  let elem= document.createElement('div');
+<script>
+ let names = ['Москва','Санкт-Петербург','Новосибирск','Екатеринбург','Казань']
+ let population = ['13149803','5597763','1633851','1580109','1318604'] 
+ for(let i=0; i < 5; i++){
+ let elem= document.createElement('div')
+ let elem2 = document.createElement('div') 
+ let elem3 = document.createElement('div') 
+ elem.innerText = names [i];
+ elem3.innerText = population [i];
   elem.style.width = '50px'
   elem.style.height = '200px'
   elem.style.backgroundColor = 'red'
-  document.body.append(elem)
-    </script>
+  document.body.append(elem);
+  document.body.append(elem2);
+  document.body.append(elem3);
+ }
+
+</script>
 </body>
 </html>
